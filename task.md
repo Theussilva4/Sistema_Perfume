@@ -1,0 +1,14 @@
+- `[ ]` **Backend: Atualizar `pedidoController.js`**
+  - `[ ]` Modificar `criarPedido` para aceitar `pagamentos` (array).
+  - `[ ]` Exigir caixa aberto (`statusCaixa`) antes de finalizar a venda.
+  - `[ ]` Salvar na tabela `mspedido_pagamento` os múltiplos planos.
+  - `[ ]` Gerar `mscaixa_movimento` do tipo `ENTRADA` e categoria `VENDA` para cada pagamento.
+- `[ ]` **Frontend: Atualizar `pedidosService.js`**
+  - `[ ]` Modificar o payload de `createPedido` para enviar os múltiplos pagamentos.
+- `[ ]` **Frontend: Atualizar `Orders.tsx` (Finalizar Venda)**
+  - `[ ]` Verificar se o caixa está aberto (bloquear se não estiver).
+  - `[ ]` Modificar a aba de Pagamento para permitir adicionar múltiplos planos de pagamento.
+  - `[ ]` Validar se a soma dos pagamentos atinge o valor total do pedido.
+- `[ ]` **Testes e Validação**
+  - `[ ]` Finalizar uma venda mista (ex: Dinheiro + PIX).
+  - `[ ]` Verificar se abateu o estoque e se apareceu no extrato do caixa.
